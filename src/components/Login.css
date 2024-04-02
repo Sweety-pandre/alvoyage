@@ -1,0 +1,180 @@
+.contain{
+   
+    
+   background-image: radial-gradient(black,rgb(26, 26, 56));
+    height: 100vh;
+    display: flex;
+   
+    align-items: center;
+    
+}
+.left{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #dec506;
+    --color-2: #40aad7;
+    --color-3: #5feac5;
+  }
+  
+  .title-word-2 {
+    --color-1: #eea915;
+    --color-2: #22f4dc;
+    --color-3: #b178f6;
+  }
+  
+  .title-word-3 {
+    --color-1: #9ff36b;
+    --color-2: #f4413e;
+    --color-3: #e87ee4;
+  }
+  
+  .title-word-4 {
+    --color-1: #bdf85d;
+    --color-2: #ec834a;
+    --color-3: #f75855;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  
+  .leftContain {
+    display: grid;
+    place-items: left;  
+    text-align: left;
+    padding-left: 60px;
+  }
+  .leftContain h4{
+    font-size: 18px;
+    margin-top: 0;
+    padding-left: 10px;
+    color: rgb(65, 65, 73);
+    
+  }
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    height: 50%;
+    margin: 0;
+  }
+.formContain{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formWrap{
+    width: 60%;
+    padding: 20px 30px 25px 40px ;
+   
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:white;
+   
+}
+.formWrap h1{
+    display: flex;
+    color: rgb(47, 47, 93);
+    padding-bottom: 5px;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.formWrap img{
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    
+}
+
+.formWrap p{
+    margin: auto;
+    padding-top:0 ;
+    padding-bottom: 25px;
+    color: rgb(103, 101, 122);
+   
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+    background-color: white;
+    
+}
+.form input{
+    margin-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    width: 98%;
+    
+}
+.submitBtn{
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding: 8px;
+    font-weight: 600;
+    border: 1px solid rgb(134, 134, 154);
+    background-color: rgb(176, 163, 143);
+    cursor: pointer;
+}
+
+.downP{
+  margin: 0px;
+  padding: 0px;
+}
+
+#file{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .contain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formContain{
+        width: 90%;
+    }
+    .left{
+        width: 90%;
+    }
+    .leftContain{
+        margin: auto;
+        padding: 25px 0px ;
+    }
+    .form {
+        width: 95%;
+    }
+}
